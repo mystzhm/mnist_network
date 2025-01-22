@@ -12,6 +12,9 @@ if __name__ == '__main__':
     test_dataset = datasets.ImageFolder(root='./mnist_images/test', transform=transform)
     print("test_dataset length: ", len(test_dataset))
 
+
+    # device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
+
     model = Network()  # 定义神经网络模型
     model.load_state_dict(torch.load('mnist.pth')) # 加载刚刚训练好的模型文件
 

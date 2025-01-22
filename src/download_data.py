@@ -1,6 +1,6 @@
 # 这个程序的功能会先将MNIST数据下载下来，然后再保存为.png的格式。
 
-from torchvision.datasets import MNIST
+from torchvision.datasets import FashionMNIST as MNIST
 from torchvision.transforms import ToTensor
 
 # 注意，这里得到的train_data和test_data已经直接可以用于训练了！

@@ -1,0 +1,6 @@
+﻿data/
+MNIST_data/
+mnist_images/
+mnist_test/
+mnist_train/
+__pycache__/
